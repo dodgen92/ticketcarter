@@ -70,8 +70,7 @@ iters=int(input('[+] How Many Iteration per Window:') or "1000")
 driver=openwinchrome()
 driver.quit()
 
-for thd in range(1,instances+1):
-    threading.Thread(target=main,args=(thd,iters,)).start()
+
 
 
 
